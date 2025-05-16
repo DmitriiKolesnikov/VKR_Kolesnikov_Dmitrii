@@ -36,7 +36,6 @@ for row in range(16, ws.max_row + 1):
 
 records = []
 for bank in bank_names:
-    # Найдём строки этого банка
     rows_for_bank = [
         r for r in range(16, ws.max_row + 1)
         if ws.cell(row=r, column=1).value == bank
